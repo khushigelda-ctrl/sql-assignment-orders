@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS Orders (
     Quantity INT,
     PRIMARY KEY (OrderID)
 );
-CREATE INDEX order_index ON Orders(CustomerID,OrderDate)
+CREATE INDEX order_index ON Orders(CustomerID,OrderDate);
 
 insert into Orders (CustomerID, OrderDate, ProductID, Quantity) values (1, '2022-09-15', 1, 1);
 insert into Orders (CustomerID, OrderDate, ProductID, Quantity) values (2, '2023-03-24', 2, 2);
